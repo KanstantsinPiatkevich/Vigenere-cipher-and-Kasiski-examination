@@ -170,7 +170,7 @@ namespace Lab1
 	{
 		if (statisticsFile == nullptr)
 		{
-			if (MessageBox::Show("Ôàéë ñòàòèñòèêè íå âûáðàí, ñòàòèñòèêà çàïèñàíà íå áóäåò! Ïðîäîëæèòü?", "Ñòàòèñòèêà",
+			if (MessageBox::Show("Ã”Ã Ã©Ã« Ã±Ã²Ã Ã²Ã¨Ã±Ã²Ã¨ÃªÃ¨ Ã­Ã¥ Ã¢Ã»Ã¡Ã°Ã Ã­, Ã±Ã²Ã Ã²Ã¨Ã±Ã²Ã¨ÃªÃ  Ã§Ã Ã¯Ã¨Ã±Ã Ã­Ã  Ã­Ã¥ Ã¡Ã³Ã¤Ã¥Ã²! ÃÃ°Ã®Ã¤Ã®Ã«Ã¦Ã¨Ã²Ã¼?", "Ã‘Ã²Ã Ã²Ã¨Ã±Ã²Ã¨ÃªÃ ",
 				MessageBoxButtons::YesNo, MessageBoxIcon::Question) == System::Windows::Forms::DialogResult::Yes)
 				return true;
 			else
@@ -205,7 +205,7 @@ namespace Lab1
 			}
 			else
 			{
-				MessageBox::Show("Âàø ôàéë ñîîáùåíèÿ ïóñò! Øèôðîâàíèå íåâîçìîæíî.", "Îøèáêà ÷òåíèÿ", MessageBoxButtons::OK, MessageBoxIcon::Error);
+				MessageBox::Show("Ã‚Ã Ã¸ Ã´Ã Ã©Ã« Ã±Ã®Ã®Ã¡Ã¹Ã¥Ã­Ã¨Ã¿ Ã¯Ã³Ã±Ã²! Ã˜Ã¨Ã´Ã°Ã®Ã¢Ã Ã­Ã¨Ã¥ Ã­Ã¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã®.", "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã·Ã²Ã¥Ã­Ã¨Ã¿", MessageBoxButtons::OK, MessageBoxIcon::Error);
 			}
 		}
 	}
@@ -277,7 +277,7 @@ namespace Lab1
 		}
 		else
 		{
-			MessageBox::Show("Âàø ôàéë øèôðîòåêñòà ïóñò! Äåøèôðîâàíèå íåâîçìîæíî!", "Îøèáêà ÷òåíèÿ", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show("Ã‚Ã Ã¸ Ã´Ã Ã©Ã« Ã¸Ã¨Ã´Ã°Ã®Ã²Ã¥ÃªÃ±Ã²Ã  Ã¯Ã³Ã±Ã²! Ã„Ã¥Ã¸Ã¨Ã´Ã°Ã®Ã¢Ã Ã­Ã¨Ã¥ Ã­Ã¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã®!", "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã·Ã²Ã¥Ã­Ã¨Ã¿", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
 
@@ -398,7 +398,7 @@ namespace Lab1
 				keyInfo = getKeyLength(text, form);
 			keyInfo->getLength();
 			if (keyInfo->getLength() == 0)
-				MessageBox::Show("Ïîâòîðåíèé íå íàéäåíî", "Òåñò Êàñèñêè", MessageBoxButtons::OK, MessageBoxIcon::Information);
+				MessageBox::Show("ÃÃ®Ã¢Ã²Ã®Ã°Ã¥Ã­Ã¨Ã© Ã­Ã¥ Ã­Ã Ã©Ã¤Ã¥Ã­Ã®", "Ã’Ã¥Ã±Ã² ÃŠÃ Ã±Ã¨Ã±ÃªÃ¨", MessageBoxButtons::OK, MessageBoxIcon::Information);
 			else
 			{
 				form->Show();
@@ -410,7 +410,7 @@ namespace Lab1
 		}
 		else
 		{
-			MessageBox::Show("Âàø ôàéë øèôðîòåêñòà ïóñò! Ïðîâåäåíèå òåñòà Êàñèñêè íåâîçìîæíî.", "Îøèáêà ÷òåíèÿ", MessageBoxButtons::OK, MessageBoxIcon::Error);
+			MessageBox::Show("Ã‚Ã Ã¸ Ã´Ã Ã©Ã« Ã¸Ã¨Ã´Ã°Ã®Ã²Ã¥ÃªÃ±Ã²Ã  Ã¯Ã³Ã±Ã²! ÃÃ°Ã®Ã¢Ã¥Ã¤Ã¥Ã­Ã¨Ã¥ Ã²Ã¥Ã±Ã²Ã  ÃŠÃ Ã±Ã¨Ã±ÃªÃ¨ Ã­Ã¥Ã¢Ã®Ã§Ã¬Ã®Ã¦Ã­Ã®.", "ÃŽÃ¸Ã¨Ã¡ÃªÃ  Ã·Ã²Ã¥Ã­Ã¨Ã¿", MessageBoxButtons::OK, MessageBoxIcon::Error);
 		}
 	}
 
@@ -476,7 +476,7 @@ namespace Lab1
 					lengthRange[3].success++;
 				}
 			}
-			form->dataGridViewStats->Rows->Add(cipherTextLength.ToString(), realKeyLength.ToString(), possibleKeyLength.ToString(), stat == 1 ? "ÒÅÑÒ ÏÐÎÉÄÅÍ" : "ÒÅÑÒ ÍÅ ÏÐÎÉÄÅÍ");
+			form->dataGridViewStats->Rows->Add(cipherTextLength.ToString(), realKeyLength.ToString(), possibleKeyLength.ToString(), stat == 1 ? "Ã’Ã…Ã‘Ã’ ÃÃÃŽÃ‰Ã„Ã…Ã" : "Ã’Ã…Ã‘Ã’ ÃÃ… ÃÃÃŽÃ‰Ã„Ã…Ã");
 		}
 		form->dataGridViewStats->Rows->RemoveAt(form->dataGridViewStats->RowCount - 2);
 		for (int i = 0; i < 4; i++)
@@ -495,7 +495,7 @@ namespace Lab1
 					form->dataGridViewConclusion->Rows->Add("500 - 1000", lengthRange[i].amount.ToString(), (lengthRange[i].success * 100 / lengthRange[i].amount).ToString() + "%");
 					break;
 				case 3:
-					form->dataGridViewConclusion->Rows->Add("1000 è áîëåå", lengthRange[i].amount.ToString(), (lengthRange[i].success * 100 / lengthRange[i].amount).ToString() + "%");
+					form->dataGridViewConclusion->Rows->Add("1000 Ã¨ Ã¡Ã®Ã«Ã¥Ã¥", lengthRange[i].amount.ToString(), (lengthRange[i].success * 100 / lengthRange[i].amount).ToString() + "%");
 					break;
 				}
 			}
@@ -514,216 +514,3 @@ void main(array<String^>^ args)
 	Lab1::MainForm form;
 	Application::Run(%form);
 }
-
-/*String^ MainForm::encryptText(String^ key)
-{
-	String^ cipherText;
-	System::IO::StreamReader^ reader = gcnew System::IO::StreamReader(messageTextFile);
-	int step = 0;
-	while (!reader->EndOfStream)
-	{
-		char cipherSymbol;
-		if (reader->Peek() >= 65 && reader->Peek() <= 90)
-		{
-			cipherSymbol = (char)((reader->Read() - 65 + key[step % key->Length] - 65) % 26 + 65);
-			step++;
-		}
-		else
-			if (reader->Peek() >= 97 && reader->Peek() <= 122)
-			{
-				cipherSymbol = (char)((reader->Read() - 97 + key[step % key->Length] - 65) % 26 + 97);
-				step++;
-			}
-			else
-			{
-				cipherSymbol = reader->Read();
-			}
-		cipherText = cipherText + gcnew String(cipherSymbol, 1);
-	}
-	reader->Close();
-	return cipherText;
-}
-
-String^ MainForm::encryptTextAuto(String^ key)
-{
-	String^ cipherText;
-	String^ text = getCipherSymbols(textBoxMessage->Text);
-	System::IO::StreamReader^ reader = gcnew System::IO::StreamReader(messageTextFile);
-	int step = 0;
-	while (!reader->EndOfStream)
-	{
-		char cipherSymbol;
-		if (reader->Peek() >= 65 && reader->Peek() <= 90)
-		{
-			if (step < key->Length)
-				cipherSymbol = (char)((reader->Read() - 65 + key[step % key->Length] - 65) % 26 + 65);
-			else
-				cipherSymbol = (char)((reader->Read() - 65 + text[step - key->Length] - 65) % 26 + 65);
-			step++;
-		}
-		else
-			if (reader->Peek() >= 97 && reader->Peek() <= 122)
-			{
-				if (step < key->Length)
-					cipherSymbol = (char)((reader->Read() - 97 + key[step % key->Length] - 65) % 26 + 97);
-				else
-					cipherSymbol = (char)((reader->Read() - 97 + text[step - key->Length] - 65) % 26 + 97);
-				step++;
-			}
-			else
-			{
-				cipherSymbol = reader->Read();
-			}
-			cipherText = cipherText + gcnew String(cipherSymbol, 1);
-	}
-	reader->Close();
-	return cipherText;
-}
-
-	String^ MainForm::decryptText(String^ key)
-	{
-		String^ sourceText;
-		System::IO::StreamReader^ reader = gcnew System::IO::StreamReader(cipherTextFile);
-		int step = 0;
-		while (!reader->EndOfStream)
-		{
-			char sourceSymbol;
-			if (reader->Peek() >= 65 && reader->Peek() <= 90)
-			{
-				sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 65);
-				step++;
-			}
-			else
-				if (reader->Peek() >= 97 && reader->Peek() <= 122)
-				{
-					sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 97);
-					step++;
-				}
-				else
-				{
-					sourceSymbol = reader->Read();
-				}
-			sourceText = sourceText + gcnew String(sourceSymbol, 1);
-		}
-		reader->Close();
-		return sourceText;
-	}
-
-	String^ MainForm::decryptText(String^ key)
-	{
-		String^ sourceText;
-		System::IO::StreamReader^ reader = gcnew System::IO::StreamReader(cipherTextFile);
-		int step = 0;
-		while (!reader->EndOfStream)
-		{
-			char sourceSymbol;
-			if (reader->Peek() >= 65 && reader->Peek() <= 90)
-			{
-				sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 65);
-				step++;
-			}
-			else
-				if (reader->Peek() >= 97 && reader->Peek() <= 122)
-				{
-					sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 97);
-					step++;
-				}
-				else
-				{
-					sourceSymbol = reader->Read();
-				}
-			sourceText = sourceText + gcnew String(sourceSymbol, 1);
-		}
-		reader->Close();
-		return sourceText;
-	}
-
-	KeyInfo^ MainForm::getKeyLength(String^ text)
-	{
-		KeyInfo^ keyInfo = gcnew KeyInfo();
-		int grammLength, maxRep = 0;
-		for (grammLength = MIN_GRAMM_LENGTH; grammLength <= MAX_GRAMM_LENGTH; grammLength++)
-		{
-			for (int i = 0; i <= text->Length - grammLength; i++)
-			{
-				String^ compGramm;
-				String^ gramm = getGramm(grammLength, i, text);
-				int tempMaxRep = 0;
-				for (int k = i + gramm->Length; k <= text->Length - grammLength; k++)
-				{
-					compGramm = getGramm(grammLength, k, text);
-					if (gramm == compGramm)
-					{
-						keyInfo->setLength(getMaxCommonDivider(keyInfo->getLength(), k - i));
-						tempMaxRep++;
-					}
-				}
-				if (tempMaxRep > maxRep)
-				{
-					maxRep = tempMaxRep;
-					keyInfo->setRepGramm(gramm);
-				}
-			}
-		}
-		return keyInfo;
-	}
-
-	String^ MainForm::getDistances(KeyInfo^ keyInfo, String^ text)
-	{
-		String^ distance = nullptr;
-		int prevEntrance = -1;
-		for (int i = 0; i <= text->Length - (keyInfo->getRepGramm())->Length; i++)
-		{
-			String^ nextGramm;
-			int tempMaxRep = 0;
-			nextGramm = getGramm((keyInfo->getRepGramm())->Length, i, text);
-			if (keyInfo->getRepGramm() == nextGramm)
-			{
-				if (prevEntrance != -1)
-				{
-					distance = distance + (i - prevEntrance).ToString() + " ";
-					keyInfo->setGcd(getMaxCommonDivider(i - prevEntrance, keyInfo->getGcd()));
-					prevEntrance = i;
-				}
-				else
-					prevEntrance = i;
-			}
-		}
-		return distance;
-	}
-
-String^ MainForm::decryptTextAuto(String^ key)
-{
-	String^ sourceText;
-	String^ text = getCipherSymbols(textBoxMessage->Text);
-	System::IO::StreamReader^ reader = gcnew System::IO::StreamReader(cipherTextFile);
-	int step = 0;
-	while (!reader->EndOfStream)
-	{
-		char sourceSymbol;
-		if (reader->Peek() >= 65 && reader->Peek() <= 90)
-		{
-			if (step < key->Length)
-				sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 65);
-			else
-				sourceSymbol = (char)((reader->Read() - text[step - key->Length] + 26) % 26 + 65);
-			step++;
-		}
-		else
-			if (reader->Peek() >= 97 && reader->Peek() <= 122)
-			{
-				if (step < key->Length)
-					sourceSymbol = (char)((reader->Read() - key[step % key->Length] + 26) % 26 + 97);
-				else
-					sourceSymbol = (char)((reader->Read() - text[step - key->Length] + 26) % 26 + 97);
-				step++;
-			}
-			else
-			{
-				sourceSymbol = reader->Read();
-			}
-		sourceText = sourceText + gcnew String(sourceSymbol, 1);
-	}
-	reader->Close();
-	return sourceText;
-}*/
